@@ -1,0 +1,469 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap");
+body {
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 5px;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-size: 17px;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding: 0px 20px;
+}
+
+.h1 {
+  font-family: "Tilt Neon", cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  font-size: 40px;
+  margin-top: 20px;
+}
+.banner {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+  width: 100%;
+  background-image: url(images/banner.png);
+  font-family: "Tilt Neon", cursive;
+}
+.bannercontact {
+  transition: all 0.2s ease-in-out;
+}
+.bannercontact :hover {
+  transform: scale(1.1);
+}
+
+.bannercontact :active {
+  transform: translate(0.01em, 0.01em);
+  box-shadow: 0.02em 0.02em;
+}
+
+.bannertext {
+  /* 100% width for mobile devices */
+  width: 50%;
+}
+.bannertext h1 {
+  font-size: 50px;
+}
+.bannertext p {
+  /* 15px font size for mobile devices */
+  font-size: 25px;
+  text-align: center;
+  font-family: "Tilt Neon", cursive;
+}
+
+button {
+  margin-top: 30px;
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 30px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+.project {
+  /* border: solid 5px black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.project1-photo {
+  background-image: url(images/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 40px; */
+  height: 700px;
+  width: 850px;
+  /* border: solid 5px black; */
+}
+
+.project1-text {
+  margin-top: 20px;
+  padding: 30px;
+  /* border: solid 5px black; */
+  font-size: 23px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* margin: 40px; */
+  height: 500px;
+  width: 275px;
+  border: solid 0px black;
+  font-family: "Tilt Neon", cursive;
+}
+
+#project2photo {
+  background-image: url(images/2.png);
+}
+#project3photo {
+  background-image: url(images/3.png);
+}
+#project4photo {
+  background-image: url(images/4.png);
+}
+#project5photo {
+  background-image: url(images/5.png);
+}
+
+/* ---- */
+
+footer {
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color: #3f71ea;
+}
+
+.footer-links a:hover {
+  color: #3f71ea;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ------------------------- */
+.drop-in {
+  animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-2 {
+  animation: drop-in 1200ms ease 500ms backwards;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+/* this code is used to reveal items its linked with javascript code */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+@media only screen and (max-width: 767px) {
+  .project1-photo {
+    background-image: url(images/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+  }
+
+  .project1-text {
+    padding: 30px;
+    /* border: solid 5px black; */
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin: 40px; */
+    height: 400px;
+    width: 275px;
+    border: solid 0px black;
+    font-family: "Tilt Neon", cursive;
+  }
+
+  .bannertext {
+    /* 100% width for mobile devices */
+    width: 100%;
+  }
+  .bannertext h1 {
+    font-size: 50px;
+  }
+  .bannertext p {
+    /* 15px font size for mobile devices */
+    font-size: 19px;
+    text-align: center;
+    font-family: "Tilt Neon", cursive;
+  }
+}
