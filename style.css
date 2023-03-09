@@ -451,7 +451,7 @@ a {
     height: 400px;
     width: 275px;
     border: solid 0px black;
-    font-family: "Tilt Neon", cursive;
+    font-family: "Tilt Neon", cursive, sans-serif;
   }
 
   .bannertext {
@@ -465,6 +465,6 @@ a {
     /* 15px font size for mobile devices */
     font-size: 19px;
     text-align: center;
-    font-family: "Tilt Neon", cursive;
+    font-family: "Tilt Neon", cursive, sans-serif;
   }
 }
