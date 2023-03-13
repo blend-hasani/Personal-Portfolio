@@ -455,6 +455,8 @@ a {
     width: 275px;
     border: solid 0px black;
     font-family: Georgia, serif;
+    margin-top: 60px;
+    margin-left: 40px;
   }
 
   .bannertext {
