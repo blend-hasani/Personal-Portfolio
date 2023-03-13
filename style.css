@@ -177,13 +177,13 @@ button:active {
   /* border: solid 5px black; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .project1-photo {
   background-image: url(images/1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin: 40px; */
   height: 700px;
   width: 850px;
   /* border: solid 5px black; */
@@ -199,11 +199,13 @@ button:active {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* margin: 40px; */
+
   height: 500px;
   width: 275px;
   border: solid 0px black;
   font-family: "Tilt Neon", cursive;
+  margin-top: 60px;
+  margin-left: 40px;
 }
 
 #project2photo {
