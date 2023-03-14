@@ -173,12 +173,20 @@ button:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
 }
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .project {
   /* border: solid 5px black; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  width: 1300px;
+  margin-top: 50px;
 }
 .project1-photo {
   background-image: url(images/1.png);
@@ -225,6 +233,7 @@ button:active {
 
 footer {
   bottom: 0;
+  padding: 20px;
 }
 
 @media (max-height: 800px) {
@@ -432,6 +441,21 @@ a {
   * {
     font-family: Georgia, serif;
   }
+  .projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .project {
+    /* border: solid 5px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    width: 90%;
+  }
   .project1-photo {
     background-image: url(images/1.png);
     background-repeat: no-repeat;
@@ -455,8 +479,8 @@ a {
     width: 275px;
     border: solid 0px black;
     font-family: Georgia, serif;
-    margin-top: 60px;
-    margin-left: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 
   .bannertext {
